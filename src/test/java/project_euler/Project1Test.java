@@ -8,6 +8,7 @@ public class Project1Test{
 
     @Test
     public void testProblem1(){
-        assertEquals(233168, Problem1.run());
+        final String message="sum of all the multiples of 3 or 5 below 1000 is wrong!";
+        assertEquals(message,233168, Problem1.run());
     }
 }
