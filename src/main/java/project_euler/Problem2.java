@@ -11,6 +11,10 @@ package project_euler;
  */
 public class Problem2 {
 
+    public static int run() {
+        return sumOfFiboTermsUptoTerm(4_000_000);
+    }
+
     public static int sumOfFiboTermsUptoTerm(final int maxFibo) {
         int sum = 2;
         int previous = 1;
