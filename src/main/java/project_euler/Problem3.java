@@ -10,6 +10,10 @@ import java.util.List;
  */
 public class Problem3 {
 
+    public static long run() {
+        return maxPrimeFactorOf(6_0085_1475_143L);
+    }
+
     public static long maxPrimeFactorOf( long input) {
         long start = System.currentTimeMillis();
         long max=0;
@@ -21,17 +25,10 @@ public class Problem3 {
             }
         }
         long stop = System.nanoTime();
-        System.out.println((stop-start));
+        //System.out.println(TimeUnit.MILLISECONDS.convert((stop - start),TimeUnit.NANOSECONDS));
         return max;
     }
 
-    private static boolean isPrimeNumber(final int num) {
-        for (int i = 2; i < Math.sqrt(num); i++) {
-            if((num%i)==0)
-                return false;
-        }
-        return true;
-    }
 
     public static List<Integer> primeNumbersOf(int number) {
         List<Integer> result=new ArrayList<>();
