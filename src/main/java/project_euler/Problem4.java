@@ -8,16 +8,10 @@ package project_euler;
  */
 public class Problem4 {
 
-    public static boolean isPalindrome(int N) {
-        int original = N;
-        int reversed = 0;
-        while (N > 0) {
-            reversed = reversed * 10 + (N % 10);
-            N /= 10;
-        }
-        return original == reversed;
+    public static void main(String[] args) {
+        run();
     }
-
+    
     public static int run() {
         int max = 0;
         for (int i = 100; i < 1000; i++) {
@@ -31,8 +25,16 @@ public class Problem4 {
         return max;
     }
 
-    public static void main(String[] args) {
-        run();
+    public static boolean isPalindrome(int N) {
+        int original = N;
+        int reversed = 0;
+        while (N > 0) {
+            reversed = reversed * 10 + (N % 10);
+            N /= 10;
+        }
+        return original == reversed;
     }
+
+
 
 }
