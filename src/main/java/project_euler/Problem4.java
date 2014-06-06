@@ -9,9 +9,9 @@ package project_euler;
 public class Problem4 {
 
     public static void main(String[] args) {
-        run();
+        System.out.println("Max palindrome number made out of product of two 3-digit numbers is:\n " + run());
     }
-    
+
     public static int run() {
         int max = 0;
         for (int i = 100; i < 1000; i++) {
@@ -21,7 +21,6 @@ public class Problem4 {
                     max = temp;
             }
         }
-        //System.out.println("Max palindrome number made out of product of two 3-digit numbers is:\n " + max);
         return max;
     }
 
