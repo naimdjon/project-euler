@@ -8,14 +8,8 @@ package project_euler;
  */
 public class Problem4 {
 
-    public static boolean isPalindrome(int N) {
-        int original = N;
-        int reversed = 0;
-        while (N > 0) {
-            reversed = reversed * 10 + (N % 10);
-            N /= 10;
-        }
-        return original == reversed;
+    public static void main(String[] args) {
+        System.out.println("Max palindrome number made out of product of two 3-digit numbers is:\n " + run());
     }
 
     public static int run() {
@@ -27,12 +21,19 @@ public class Problem4 {
                     max = temp;
             }
         }
-        //System.out.println("Max palindrome number made out of product of two 3-digit numbers is:\n " + max);
         return max;
     }
 
-    public static void main(String[] args) {
-        run();
+    public static boolean isPalindrome(int N) {
+        int original = N;
+        int reversed = 0;
+        while (N > 0) {
+            reversed = reversed * 10 + (N % 10);
+            N /= 10;
+        }
+        return original == reversed;
     }
+
+
 
 }
