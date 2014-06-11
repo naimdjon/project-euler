@@ -8,7 +8,7 @@ public class Problem5Test {
 
     @Test
     public void testRunProblem5() {
-        assertEquals(123,Problem5.run());
+        assertEquals(232792560,Problem5.run());
     }
 
 
